@@ -8,8 +8,8 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest  # Esto es obligatorio
-
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
@@ -30,5 +30,4 @@ jobs:
         run: npm test
 
       - name: Simular despliegue
-        run: 
-        echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
+        run: echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
