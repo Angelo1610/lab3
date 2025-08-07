@@ -8,14 +8,15 @@ on:
 
 jobs:
   build-and-test:
-    
+    runs-on: ubuntu-latest  # Esto es obligatorio
+
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v4
-        
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
-        wuith:
+        with:
           node-version: '20'
           cache: 'npm'
 
@@ -28,7 +29,6 @@ jobs:
       - name: Ejecutar pruebas
         run: npm test
 
-      - name: simular despliegue
+      - name: Simular despliegue
         run: 
         echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
-
