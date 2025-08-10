@@ -1,7 +1,25 @@
-#node.js
+# Dependencias
 node_modules/
+
+# Entornos
 .env
+.env.local
+.env.*.local
+
+# Logs y coverage
 *.log
-coverage/
-.DS_Store
 npm-debug.log*
+yarn-error.log*
+coverage/
+
+# Sistema/IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Builds/caches
+dist/
+build/
+out/
+.eslintcache
