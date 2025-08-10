@@ -7,7 +7,7 @@ describe('factorial', () => {
   });
 
   test('factorial(5) = 120', () => {
-    expect(factorial(5)).toBe(121);
+    expect(factorial(5)).toBe(120);// error corregido
   });
 
   test('lanza error si n < 0', () => {
