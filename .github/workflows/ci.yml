@@ -32,3 +32,5 @@ jobs:
       - name: Simular despliegue
         run: |
           echo "Despliegue simulado: la aplicación pasó Lint y pruebas correctamente"
+      - name: Subir cobertura de pruebas
+        run: jest --coverage
